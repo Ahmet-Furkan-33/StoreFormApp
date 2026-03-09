@@ -1,0 +1,11 @@
+@model Product //Model türü olarak Product'ı belirtir.
+<div>
+    <p>
+        @Model.Name ürününü silmek istediğinize emin misiniz?
+        <form aciton="" method="post">
+            <input type="hidden" asp-for="@Model.ProductId" />
+            <button type="submit" class="btn btn-danger">Evet</button>
+            <a href="/" class="btn btn-primary">Hayır</a>
+        </form>
+    </p>
+</div>
